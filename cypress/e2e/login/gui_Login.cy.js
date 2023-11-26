@@ -7,7 +7,7 @@ describe('Teste funcional de login e cadastro', () => {
     // Testando se o campo de CPF está limitando a entrada para 11 caracteres
     it('Deve limitar o campo de CPF a 11 caracteres', () => {
         // Acessando a página de login
-        cy.visit("http://127.0.0.1:5500/meuBaba/tela-inicial/index.html")
+        cy.visit("http://127.0.0.1:5500/tela-inicial/index.html")
         // Digitando uma sequência de 20 dígitos no campo CPF
         cy.get('#cpf').type("12345678901234567890")
         // Verifica se apenas os primeiros 11 dígitos foram aceitos
@@ -17,7 +17,7 @@ describe('Teste funcional de login e cadastro', () => {
      // TST002 - Tipo de caracteres para o CPF
     it('Deve aceitar apenas números no campo de CPF', () => {
         // Acessando a página de login novamente
-        cy.visit("http://127.0.0.1:5500/meuBaba/tela-inicial/index.html")
+        cy.visit("http://127.0.0.1:5500/tela-inicial/index.html")
         // Tentando digitar letras no campo CPF
         cy.get('#cpf').type("abcdefghij")
         // Verificando se o campo CPF rejeitou as letras e está vazio
@@ -27,7 +27,7 @@ describe('Teste funcional de login e cadastro', () => {
      // TST010 - Validação de Aviso de Login Bem Sucedido ou Não
     it('Preenchendo formulário e apertando botão deve efetuar login', () => {
         // Acessando a página de login
-        cy.visit("http://127.0.0.1:5500/meuBaba/tela-inicial/index.html")
+        cy.visit("http://127.0.0.1:5500/tela-inicial/index.html")
         // Preenchendo o campo CPF
         cy.get('#cpf').type("0123456789")
         // Preenchendo o campo senha
@@ -41,7 +41,7 @@ describe('Teste funcional de login e cadastro', () => {
     // TST004 - Requisitos de Complexidade de Senha
     it('Deve verificar se a senha atende aos requisitos de complexidade', () => {
         // Acessando a página de cadastro
-        cy.visit("http://127.0.0.1:5500/meuBaba/tela-cadastro/index.html")
+        cy.visit("http://127.0.0.1:5500/tela-cadastro/index.html")
 
         // Testando uma senha sem número
         cy.get('#senha').clear().type('Senha@')
@@ -72,7 +72,7 @@ describe('Teste funcional de login e cadastro', () => {
      // TST005 - Validação do E-mail
     it('Verificar se o email é válido', () => {
         // Acessando a página de cadastro
-        cy.visit("http://127.0.0.1:5500/meuBaba/tela-cadastro/index.html")
+        cy.visit("http://127.0.0.1:5500/tela-cadastro/index.html")
         // Preenchendo o campo de e-mail com um valor válido
         cy.get('#email').type("emailfalso@email.com.br")
         // Verificando se o campo de e-mail tem o atributo type configurado como 'email'

@@ -21,11 +21,11 @@ João Amaral Lantyer RA: 1271919682;
 
 2. Também será necessário instalar o **Cypress**, através do comando ```npm install cypress --save-dev``` no terminal;
 
-3. E utilizar do comando `npm install` no terminal do diretório `/meuBaba`;
+3. E utilizar do comando `npm install` no terminal;
 
 3. Feito isso, basta ligar o live server do VSCode;
 
-4. Rodar o comando `npx cypress open` no diretório `/meuBaba`. Isto abrirá uma aba do **Cypress**;
+4. Rodar o comando `npx cypress open`. Isto abrirá uma aba do **Cypress**;
 
 5. Agora, basta clicar em **E2E Testing** e escolher o seu navegador de preferência;
 
