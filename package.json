@@ -1,0 +1,15 @@
+{
+  "name": "meubaba",
+  "version": "1.0.0",
+  "description": "Projeto criado para avaliação A3 da UC de Gestão e Qualidade de Software utilizando Cypress para testes automatizados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.5.1"
+  }
+}
