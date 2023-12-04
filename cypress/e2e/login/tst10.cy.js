@@ -9,7 +9,7 @@ describe('TST010', () => {
         // Preenchendo o campo CPF
         cy.get('#cpf').type("0123456789")
         // Preenchendo o campo senha
-        cy.get('#senha').type("padraosenha123")
+        cy.get('#senha').type("Padrao@senha123")
         // Clicando no botão de entrar
         cy.get('#entrar').click()
         // Verificando se a mensagem de sucesso aparece na tela
